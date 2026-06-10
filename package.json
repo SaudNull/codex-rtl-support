@@ -5,13 +5,13 @@
   "type": "module",
   "license": "MIT",
   "author": "Saud",
-  "homepage": "https://github.com/saud/codex-rtl-support#readme",
+  "homepage": "https://github.com/SaudNull/codex-rtl-support#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saud/codex-rtl-support.git"
+    "url": "git+https://github.com/SaudNull/codex-rtl-support.git"
   },
   "bugs": {
-    "url": "https://github.com/saud/codex-rtl-support/issues"
+    "url": "https://github.com/SaudNull/codex-rtl-support/issues"
   },
   "keywords": [
     "codex",

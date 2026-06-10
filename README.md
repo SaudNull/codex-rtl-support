@@ -2,7 +2,7 @@
 
 Right-to-left text support for the Codex macOS desktop app.
 
-[![CI](https://github.com/saud/codex-rtl-support/actions/workflows/ci.yml/badge.svg)](https://github.com/saud/codex-rtl-support/actions/workflows/ci.yml)
+[![CI](https://github.com/SaudNull/codex-rtl-support/actions/workflows/ci.yml/badge.svg)](https://github.com/SaudNull/codex-rtl-support/actions/workflows/ci.yml)
 
 ![Before and after RTL rendering](docs/before-after.svg)
 
