@@ -4,7 +4,7 @@ Right-to-left text support for the Codex macOS desktop app.
 
 [![CI](https://github.com/SaudNull/codex-rtl-support/actions/workflows/ci.yml/badge.svg)](https://github.com/SaudNull/codex-rtl-support/actions/workflows/ci.yml)
 
-![Before and after RTL rendering](docs/before-after.svg)
+![Before and after RTL rendering](docs/before-after.png)
 
 Codex is excellent for Arabic, Hebrew, Persian, Urdu, and other RTL conversations, but the desktop UI can render RTL text inside an LTR flow. This patch adds a small runtime layer that detects the first strong character in chat and composer text, applies the correct `dir`, and leaves code-oriented surfaces alone.
 
