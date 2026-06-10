@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../assets/codex-rtl-support.css" />
+    <style>
+      body {
+        font: 14px system-ui, sans-serif;
+        margin: 24px;
+      }
+
+      .markdownContent,
+      .ProseMirror {
+        border: 1px solid #d0d0d0;
+        margin-bottom: 12px;
+        max-width: 560px;
+        padding: 12px;
+      }
+
+      pre {
+        background: #f5f5f5;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="root">
+      <section class="markdownContent" data-testid="arabic-message">
+        <p id="arabic">مرحبا يا Codex، هذا اختبار لاتجاه النص.</p>
+        <pre id="code"><code>const direction = "ltr";</code></pre>
+      </section>
+      <section class="markdownContent" data-testid="english-message">
+        <p id="english">Hello Codex, keep this left to right.</p>
+      </section>
+      <div id="composer" class="ProseMirror" contenteditable="true">اكتب رسالة عربية</div>
+    </main>
+    <script type="module" src="../../assets/codex-rtl-support.js"></script>
+  </body>
+</html>

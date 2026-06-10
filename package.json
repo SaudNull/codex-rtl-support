@@ -1,0 +1,41 @@
+{
+  "name": "codex-rtl-support",
+  "version": "0.1.0",
+  "description": "RTL support patch for Codex macOS desktop.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Saud",
+  "homepage": "https://github.com/saud/codex-rtl-support#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saud/codex-rtl-support.git"
+  },
+  "bugs": {
+    "url": "https://github.com/saud/codex-rtl-support/issues"
+  },
+  "keywords": [
+    "codex",
+    "rtl",
+    "arabic",
+    "hebrew",
+    "persian",
+    "macos",
+    "electron"
+  ],
+  "bin": {
+    "codex-rtl": "./scripts/patch-codex.mjs"
+  },
+  "scripts": {
+    "patch": "node scripts/patch-codex.mjs install",
+    "restore": "node scripts/patch-codex.mjs uninstall",
+    "status": "node scripts/patch-codex.mjs status",
+    "dry-run": "node scripts/patch-codex.mjs install --dry-run",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@electron/asar": "4.2.0"
+  }
+}

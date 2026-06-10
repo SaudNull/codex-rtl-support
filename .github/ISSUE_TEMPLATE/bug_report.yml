@@ -1,0 +1,28 @@
+name: Bug report
+description: Report an RTL rendering or installer issue.
+title: "[bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include the language/script and where it appeared in Codex.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: input
+    id: codex-version
+    attributes:
+      label: Codex version
+      placeholder: "For example: 149.0.7827.54"
+  - type: textarea
+    id: checks
+    attributes:
+      label: Checks
+      description: Paste the output of `npm run status` if available.

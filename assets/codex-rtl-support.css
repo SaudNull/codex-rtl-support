@@ -1,0 +1,39 @@
+[data-codex-rtl] {
+  text-align: start;
+  unicode-bidi: plaintext;
+}
+
+[data-codex-rtl="rtl"] {
+  direction: rtl;
+}
+
+[data-codex-rtl="ltr"] {
+  direction: ltr;
+}
+
+.ProseMirror[data-codex-rtl],
+[contenteditable="true"][data-codex-rtl],
+[role="textbox"][data-codex-rtl],
+textarea[data-codex-rtl] {
+  caret-color: auto;
+  text-align: start;
+}
+
+[data-codex-rtl] :is(pre, code, kbd, samp),
+[data-codex-rtl] :is(.xterm, .cm-editor, .monaco-editor),
+[data-codex-rtl] [class*="codeBlock"],
+[data-codex-rtl] [class*="diff"],
+[data-codex-rtl] [data-language],
+[data-codex-rtl] [data-code-block] {
+  direction: ltr;
+  text-align: left;
+  unicode-bidi: isolate;
+}
+
+[data-codex-rtl] :is(table, thead, tbody, tr) {
+  direction: inherit;
+}
+
+[data-codex-rtl] :is(th, td) {
+  text-align: start;
+}

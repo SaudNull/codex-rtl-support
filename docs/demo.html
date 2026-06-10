@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Codex RTL Support Demo</title>
+    <link rel="stylesheet" href="../assets/codex-rtl-support.css" />
+    <style>
+      body {
+        background: #f7f7f4;
+        color: #24292f;
+        font: 15px system-ui, sans-serif;
+        margin: 0;
+        padding: 32px;
+      }
+
+      main {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin: auto;
+        max-width: 1100px;
+      }
+
+      section {
+        background: white;
+        border: 1px solid #deded8;
+        border-radius: 16px;
+        padding: 24px;
+      }
+
+      .message {
+        background: #f6f8fa;
+        border: 1px solid #d8dee4;
+        border-radius: 12px;
+        margin: 18px 0;
+        padding: 16px;
+      }
+
+      .before .message {
+        direction: ltr;
+        text-align: left;
+        unicode-bidi: normal;
+      }
+
+      pre {
+        background: #fff;
+        border: 1px solid #d8dee4;
+        border-radius: 10px;
+        overflow: auto;
+        padding: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="before">
+        <h2>Without patch</h2>
+        <div class="message">ابي اسوي دعم RTL في Codex والنص يطلع طبيعي مع العربي</div>
+        <pre><code>const dir = "ltr";</code></pre>
+      </section>
+      <section>
+        <h2>With patch</h2>
+        <div class="message markdownContent">
+          <p>ابي اسوي دعم RTL في Codex والنص يطلع طبيعي مع العربي</p>
+        </div>
+        <pre><code>const dir = "ltr";</code></pre>
+      </section>
+    </main>
+    <script type="module" src="../assets/codex-rtl-support.js"></script>
+  </body>
+</html>
