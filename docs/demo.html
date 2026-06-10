@@ -43,6 +43,14 @@
         unicode-bidi: normal;
       }
 
+      .message p {
+        margin: 0;
+      }
+
+      .message p + p {
+        margin-top: 8px;
+      }
+
       pre {
         background: #fff;
         border: 1px solid #d8dee4;
@@ -56,13 +64,17 @@
     <main>
       <section class="before">
         <h2>Without patch</h2>
-        <div class="message">ابي اسوي دعم RTL في Codex والنص يطلع طبيعي مع العربي</div>
+        <div class="message">
+          <p>ارفع PR في GitHub اليوم</p>
+          <p>وراجع README قبل npm run patch</p>
+        </div>
         <pre><code>const dir = "ltr";</code></pre>
       </section>
       <section>
         <h2>With patch</h2>
         <div class="message markdownContent">
-          <p>ابي اسوي دعم RTL في Codex والنص يطلع طبيعي مع العربي</p>
+          <p>ارفع PR في GitHub اليوم</p>
+          <p>وراجع README قبل npm run patch</p>
         </div>
         <pre><code>const dir = "ltr";</code></pre>
       </section>

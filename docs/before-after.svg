@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
   <title id="title">Codex RTL support before and after</title>
-  <desc id="desc">A side by side comparison showing Arabic text misaligned before the patch and properly right-to-left after the patch.</desc>
+  <desc id="desc">A side by side comparison showing mixed Arabic and English text misaligned before the patch and properly right-to-left after the patch.</desc>
   <defs>
     <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
       <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#121212" flood-opacity="0.12"/>
@@ -29,10 +29,10 @@
   <g transform="translate(70 125)">
     <rect class="panel" width="500" height="410" rx="18"/>
     <text class="label bad" x="34" y="46">WITHOUT PATCH</text>
-    <text class="hint" x="34" y="78">RTL text inherits the LTR layout.</text>
+    <text class="hint" x="34" y="78">Mixed text inherits the LTR layout.</text>
     <rect class="bubble" x="34" y="110" width="432" height="96" rx="14"/>
-    <text class="body" x="58" y="152">ابي اسوي دعم RTL في Codex</text>
-    <text class="body" x="58" y="184">والنص يطلع طبيعي مع العربي</text>
+    <text class="body" x="58" y="152">ارفع PR في GitHub اليوم</text>
+    <text class="body" x="58" y="184">وراجع README قبل patch</text>
     <line class="arrow" x1="58" y1="222" x2="200" y2="222"/>
     <text class="hint" x="58" y="250">Starts from the wrong edge</text>
     <rect class="code-bg" x="34" y="285" width="432" height="72" rx="12"/>
@@ -42,10 +42,10 @@
   <g transform="translate(630 125)">
     <rect class="panel" width="500" height="410" rx="18"/>
     <text class="label good" x="34" y="46">WITH PATCH</text>
-    <text class="hint" x="34" y="78">Strong RTL text gets isolated direction.</text>
+    <text class="hint" x="34" y="78">Mixed text uses the reading edge.</text>
     <rect class="bubble-ok" x="34" y="110" width="432" height="96" rx="14"/>
-    <text class="body" direction="rtl" unicode-bidi="plaintext" x="442" y="152" text-anchor="end">ابي اسوي دعم RTL في Codex</text>
-    <text class="body" direction="rtl" unicode-bidi="plaintext" x="442" y="184" text-anchor="end">والنص يطلع طبيعي مع العربي</text>
+    <text class="body" direction="rtl" unicode-bidi="plaintext" x="318" y="152" text-anchor="end">ارفع PR في GitHub اليوم</text>
+    <text class="body" direction="rtl" unicode-bidi="plaintext" x="318" y="184" text-anchor="end">وراجع README قبل patch</text>
     <line class="arrow" x1="442" y1="222" x2="300" y2="222"/>
     <text class="hint" x="226" y="250">Starts from the reading edge</text>
     <rect class="code-bg" x="34" y="285" width="432" height="72" rx="12"/>
