@@ -44,8 +44,8 @@
     <text class="label good" x="34" y="46">WITH PATCH</text>
     <text class="hint" x="34" y="78">Mixed text uses the reading edge.</text>
     <rect class="bubble-ok" x="34" y="110" width="432" height="96" rx="14"/>
-    <text class="body" direction="rtl" unicode-bidi="plaintext" x="318" y="152" text-anchor="end">ارفع PR في GitHub اليوم</text>
-    <text class="body" direction="rtl" unicode-bidi="plaintext" x="318" y="184" text-anchor="end">وراجع README قبل patch</text>
+    <text class="body" direction="rtl" unicode-bidi="plaintext" x="282" y="152" text-anchor="end">ارفع PR في GitHub اليوم</text>
+    <text class="body" direction="rtl" unicode-bidi="plaintext" x="282" y="184" text-anchor="end">وراجع README قبل patch</text>
     <line class="arrow" x1="442" y1="222" x2="300" y2="222"/>
     <text class="hint" x="226" y="250">Starts from the reading edge</text>
     <rect class="code-bg" x="34" y="285" width="432" height="72" rx="12"/>

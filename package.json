@@ -29,6 +29,9 @@
     "patch": "node scripts/patch-codex.mjs install",
     "restore": "node scripts/patch-codex.mjs uninstall",
     "status": "node scripts/patch-codex.mjs status",
+    "ensure": "node scripts/ensure-codex-rtl.mjs",
+    "keep": "node scripts/install-launch-agent.mjs",
+    "unkeep": "node scripts/install-launch-agent.mjs --uninstall",
     "dry-run": "node scripts/patch-codex.mjs install --dry-run",
     "test": "node --test"
   },

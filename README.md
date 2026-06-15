@@ -28,6 +28,8 @@ npm run patch
 
 Quit Codex before installing. Reopen it after the installer finishes.
 
+This patch does not add a separate app to launch. Once installed, open Codex normally.
+
 If macOS blocks writes to `/Applications/Codex.app`, run:
 
 ```bash
@@ -37,6 +39,22 @@ sudo env "PATH=$PATH" npm run patch
 If it is still blocked, enable Terminal in:
 
 System Settings -> Privacy & Security -> App Management
+
+## Keep It Applied
+
+Codex updates can replace `app.asar`. To let macOS re-check the app and reapply the patch when Codex is closed, install the LaunchAgent:
+
+```bash
+npm run keep
+```
+
+The agent runs on login, when `app.asar` changes, and every 15 minutes. It skips while Codex is open.
+
+Remove it with:
+
+```bash
+npm run unkeep
+```
 
 ## Uninstall
 
@@ -54,7 +72,7 @@ npm test
 npm run dry-run
 ```
 
-Codex updates replace `app.asar`, so run `npm run patch` again after updating the app.
+If `npm run status` says `Installed: no`, quit Codex and run `npm run patch`, or use `npm run keep` to reapply it automatically after the app is closed.
 
 ## How It Works
 
